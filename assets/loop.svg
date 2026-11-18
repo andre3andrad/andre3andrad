@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#070b14"/><stop offset="1" stop-color="#0d1326"/>
+  </linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="1"/>
+  </pattern>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect">
+    <stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/>
+    <animateTransform attributeName="gradientTransform" type="translate" values="0 0;1 0;0 0" dur="8s" repeatCount="indefinite"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+</defs>
+<style>.blink{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}@keyframes k0{0%,0.0%{stroke-opacity:.25;fill-opacity:.04}2.0%,14.7%{stroke-opacity:1;fill-opacity:.14}16.7%,100%{stroke-opacity:.25;fill-opacity:.04}}.s0{animation:k0 9.0s linear infinite}@keyframes k1{0%,16.7%{stroke-opacity:.25;fill-opacity:.04}18.7%,31.3%{stroke-opacity:1;fill-opacity:.14}33.3%,100%{stroke-opacity:.25;fill-opacity:.04}}.s1{animation:k1 9.0s linear infinite}@keyframes k2{0%,33.3%{stroke-opacity:.25;fill-opacity:.04}35.3%,48.0%{stroke-opacity:1;fill-opacity:.14}50.0%,100%{stroke-opacity:.25;fill-opacity:.04}}.s2{animation:k2 9.0s linear infinite}@keyframes k3{0%,50.0%{stroke-opacity:.25;fill-opacity:.04}52.0%,64.7%{stroke-opacity:1;fill-opacity:.14}66.7%,100%{stroke-opacity:.25;fill-opacity:.04}}.s3{animation:k3 9.0s linear infinite}@keyframes k4{0%,66.7%{stroke-opacity:.25;fill-opacity:.04}68.7%,81.3%{stroke-opacity:1;fill-opacity:.14}83.3%,100%{stroke-opacity:.25;fill-opacity:.04}}.s4{animation:k4 9.0s linear infinite}@keyframes k5{0%,83.3%{stroke-opacity:.25;fill-opacity:.04}85.3%,98.0%{stroke-opacity:1;fill-opacity:.14}100.0%,100%{stroke-opacity:.25;fill-opacity:.04}}.s5{animation:k5 9.0s linear infinite}</style>
+<rect width="1200" height="400" rx="18" fill="url(#bg)"/>
+<rect width="1200" height="400" rx="18" fill="url(#grid)" opacity=".45"/>
+<rect x=".5" y=".5" width="1199" height="399" rx="18" fill="none" stroke="url(#neon)" stroke-opacity=".55"/>
+
+<text x="40" y="58" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="15" fill="#22d3ee">// THE LOOP<tspan fill="#64748b">  —  how every feature I ship goes from idea to production</tspan></text>
+<path d="M124.0 185.0 H1074.0 V316 Q1074.0 350 1034.0 350 H164.0 Q124.0 350 124.0 316 Z" fill="none" stroke="#a78bfa" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 8">
+  <animate attributeName="stroke-dashoffset" values="0;-140" dur="4s" repeatCount="indefinite"/>
+</path>
+<circle r="4" fill="#22d3ee" filter="url(#glow)"><animateMotion dur="9.0s" begin="-0s" repeatCount="indefinite" path="M124.0 185.0 H1074.0 V316 Q1074.0 350 1034.0 350 H164.0 Q124.0 350 124.0 316 Z"/></circle><circle r="4" fill="#a78bfa" filter="url(#glow)"><animateMotion dur="9.0s" begin="-3s" repeatCount="indefinite" path="M124.0 185.0 H1074.0 V316 Q1074.0 350 1034.0 350 H164.0 Q124.0 350 124.0 316 Z"/></circle><circle r="4" fill="#f472b6" filter="url(#glow)"><animateMotion dur="9.0s" begin="-6s" repeatCount="indefinite" path="M124.0 185.0 H1074.0 V316 Q1074.0 350 1034.0 350 H164.0 Q124.0 350 124.0 316 Z"/></circle>
+
+<rect x="40" y="100" width="168" height="170" rx="14" fill="#070b14"/>
+<rect class="s0" x="40" y="100" width="168" height="170" rx="14" fill="#22d3ee" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="58" y="134" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13" fill="#22d3ee" letter-spacing="2">01</text>
+<text x="58" y="164" font-family="'Segoe UI',Inter,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#f1f5f9" letter-spacing="1">CONTEXT</text>
+<text x="58" y="196" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› memory files</text><text x="58" y="220" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› handoff docs</text><text x="58" y="244" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› AGENTS.md</text>
+<rect x="230" y="100" width="168" height="170" rx="14" fill="#070b14"/>
+<rect class="s1" x="230" y="100" width="168" height="170" rx="14" fill="#a78bfa" stroke="#a78bfa" stroke-width="1.5"/>
+<text x="248" y="134" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13" fill="#a78bfa" letter-spacing="2">02</text>
+<text x="248" y="164" font-family="'Segoe UI',Inter,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#f1f5f9" letter-spacing="1">PROMPT</text>
+<text x="248" y="196" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› role + scope</text><text x="248" y="220" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› guardrails</text><text x="248" y="244" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› model + effort</text>
+<rect x="420" y="100" width="168" height="170" rx="14" fill="#070b14"/>
+<rect class="s2" x="420" y="100" width="168" height="170" rx="14" fill="#f472b6" stroke="#f472b6" stroke-width="1.5"/>
+<text x="438" y="134" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13" fill="#f472b6" letter-spacing="2">03</text>
+<text x="438" y="164" font-family="'Segoe UI',Inter,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#f1f5f9" letter-spacing="1">AGENT</text>
+<text x="438" y="196" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› Claude Code</text><text x="438" y="220" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› Antigravity</text><text x="438" y="244" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› git worktrees</text>
+<rect x="610" y="100" width="168" height="170" rx="14" fill="#070b14"/>
+<rect class="s3" x="610" y="100" width="168" height="170" rx="14" fill="#fbbf24" stroke="#fbbf24" stroke-width="1.5"/>
+<text x="628" y="134" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13" fill="#fbbf24" letter-spacing="2">04</text>
+<text x="628" y="164" font-family="'Segoe UI',Inter,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#f1f5f9" letter-spacing="1">DRY-RUN</text>
+<text x="628" y="196" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› preflight</text><text x="628" y="220" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› idempotent</text><text x="628" y="244" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› read-only checks</text>
+<rect x="800" y="100" width="168" height="170" rx="14" fill="#070b14"/>
+<rect class="s4" x="800" y="100" width="168" height="170" rx="14" fill="#34d399" stroke="#34d399" stroke-width="1.5"/>
+<text x="818" y="134" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13" fill="#34d399" letter-spacing="2">05</text>
+<text x="818" y="164" font-family="'Segoe UI',Inter,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#f1f5f9" letter-spacing="1">APPLY</text>
+<text x="818" y="196" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› backup first</text><text x="818" y="220" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› feature flags</text><text x="818" y="244" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› squash &amp; merge</text>
+<rect x="990" y="100" width="168" height="170" rx="14" fill="#070b14"/>
+<rect class="s5" x="990" y="100" width="168" height="170" rx="14" fill="#22d3ee" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="1008" y="134" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13" fill="#22d3ee" letter-spacing="2">06</text>
+<text x="1008" y="164" font-family="'Segoe UI',Inter,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="21" font-weight="700" fill="#f1f5f9" letter-spacing="1">VERIFY</text>
+<text x="1008" y="196" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› targeted tests</text><text x="1008" y="220" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› prod smoke test</text><text x="1008" y="244" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12.5" fill="#94a3b8">› log stream</text>
+<rect x="385.0" y="336" width="430" height="30" rx="15" fill="#070b14" stroke="#a78bfa" stroke-opacity=".6"/>
+<text x="600.0" y="356" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13" fill="#a78bfa" letter-spacing="1">handoff → memory → next session starts warm</text>
+
+</svg>

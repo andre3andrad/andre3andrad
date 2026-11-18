@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 230" width="590" height="230" role="img">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#070b14"/><stop offset="1" stop-color="#0d1326"/>
+  </linearGradient>
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="1"/>
+  </pattern>
+  <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect">
+    <stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/>
+    <animateTransform attributeName="gradientTransform" type="translate" values="0 0;1 0;0 0" dur="8s" repeatCount="indefinite"/>
+  </linearGradient>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="3" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+</defs>
+<style></style>
+<rect width="590" height="230" rx="18" fill="url(#bg)"/>
+<rect width="590" height="230" rx="18" fill="url(#grid)" opacity=".45"/>
+<rect x=".5" y=".5" width="589" height="229" rx="18" fill="none" stroke="url(#neon)" stroke-opacity=".55"/>
+
+<rect x="0" y="0" width="6" height="230" rx="3" fill="#fbbf24"/>
+<circle cx="560" cy="36" r="5" fill="#34d399"><animate attributeName="opacity" values="1;.2;1" dur="2s" repeatCount="indefinite"/></circle>
+<rect x="410" y="22" width="138" height="28" rx="14" fill="#34d399" fill-opacity=".1" stroke="#34d399" stroke-opacity=".6"/>
+<text x="479.0" y="41" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12" fill="#34d399" letter-spacing="1.5">IN PRODUCTION</text>
+<text x="30" y="44" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="12" fill="#64748b" letter-spacing="2">PROJECT://</text>
+<text x="30" y="78" font-family="'Segoe UI',Inter,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="25" font-weight="800" fill="#f8fafc" letter-spacing=".5">Community Join Flow</text>
+<text x="30" y="112" font-family="'Segoe UI',Inter,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" fill="#94a3b8">Request → review → approve → invite pipeline, reviewed</text><text x="30" y="136" font-family="'Segoe UI',Inter,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="16" fill="#94a3b8">by the team inside the CMS, tested end to end.</text>
+<rect x="30" y="178" width="77" height="26" rx="6" fill="#fbbf24" fill-opacity=".08" stroke="#fbbf24" stroke-opacity=".45"/><text x="68" y="195" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13" fill="#fbbf24" textLength="55" lengthAdjust="spacingAndGlyphs">Payload</text><rect x="114.6" y="178" width="84" height="26" rx="6" fill="#fbbf24" fill-opacity=".08" stroke="#fbbf24" stroke-opacity=".45"/><text x="157" y="195" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13" fill="#fbbf24" textLength="62" lengthAdjust="spacingAndGlyphs">REST API</text><rect x="207.0" y="178" width="108" height="26" rx="6" fill="#fbbf24" fill-opacity=".08" stroke="#fbbf24" stroke-opacity=".45"/><text x="261" y="195" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13" fill="#fbbf24" textLength="86" lengthAdjust="spacingAndGlyphs">Rate limits</text><rect x="322.8" y="178" width="61" height="26" rx="6" fill="#fbbf24" fill-opacity=".08" stroke="#fbbf24" stroke-opacity=".45"/><text x="353" y="195" text-anchor="middle" font-family="'JetBrains Mono','Fira Code','Cascadia Code',Consolas,Menlo,'DejaVu Sans Mono',monospace" font-size="13" fill="#fbbf24" textLength="39" lengthAdjust="spacingAndGlyphs">Flags</text>
+
+</svg>
